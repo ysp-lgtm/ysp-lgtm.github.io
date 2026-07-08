@@ -8,10 +8,10 @@ interface SectionProps {
 
 export default function Section({ id, title, description, children, label }: SectionProps) {
   return (
-    <section id={id} className="py-20 md:py-32 relative">
-      <div className="max-w-5xl mx-auto px-6">
+    <section id={id} className="py-14 sm:py-20 md:py-32 relative">
+      <div className="max-w-5xl mx-auto px-4 sm:px-6">
         {label && (
-          <div className="mb-8 flex items-center gap-4">
+          <div className="mb-8 flex items-center gap-3 sm:gap-4">
             <span className="h-px flex-1 bg-[var(--border)]" />
             <span className="font-mono text-xs font-medium uppercase tracking-[0.15em] text-[var(--accent)]">
               {label}
@@ -19,8 +19,8 @@ export default function Section({ id, title, description, children, label }: Sec
             <span className="h-px flex-1 bg-[var(--border)]" />
           </div>
         )}
-        <div className="mb-12">
-          <h2 className="font-['Playfair_Display'] text-3xl md:text-4xl font-normal text-[var(--foreground)] tracking-tight leading-tight">
+        <div className="mb-10 sm:mb-12">
+          <h2 className="font-['Playfair_Display'] text-2xl sm:text-3xl md:text-4xl font-normal text-[var(--foreground)] tracking-tight leading-tight">
             {title}
           </h2>
           {description && (

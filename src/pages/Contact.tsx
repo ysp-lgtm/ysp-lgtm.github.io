@@ -11,9 +11,9 @@ export default function Contact() {
       description="期待与您进一步交流"
       label="联系"
     >
-      <div className="grid md:grid-cols-[1fr_1.3fr] gap-12">
+      <div className="grid md:grid-cols-[1fr_1.3fr] gap-10 md:gap-12">
         {/* Contact Info */}
-        <div className="space-y-8">
+        <div className="space-y-6 sm:space-y-8 order-2 md:order-1">
           <p className="text-[var(--muted-foreground)] leading-relaxed">
             如果您对我的经历感兴趣，或希望讨论产品经理相关的合作机会，欢迎通过以下方式联系我。
           </p>
@@ -79,45 +79,45 @@ export default function Contact() {
         </div>
         
         {/* Contact Form */}
-        <Card>
-          <h3 className="font-['Playfair_Display'] text-xl font-normal text-[var(--foreground)] mb-6">
+        <Card className="order-1 md:order-2">
+          <h3 className="font-['Playfair_Display'] text-lg sm:text-xl font-normal text-[var(--foreground)] mb-5 sm:mb-6">
             发送消息
           </h3>
-          
-          <form className="space-y-6" onSubmit={(e) => e.preventDefault()}>
+
+          <form className="space-y-5 sm:space-y-6" onSubmit={(e) => e.preventDefault()}>
             <div>
               <label className="block text-sm font-medium text-[var(--foreground)] mb-2">
                 姓名
               </label>
-              <input 
-                type="text" 
-                className="w-full px-4 py-3 rounded-md border border-[var(--border)] bg-transparent text-[var(--foreground)] placeholder:text-[var(--muted-foreground)]/60 transition-colors hover:border-[var(--muted-foreground)] focus:border-[var(--accent)] focus:ring-2 focus:ring-[var(--ring)] focus:ring-offset-2 outline-none"
+              <input
+                type="text"
+                className="w-full px-4 py-3 text-base rounded-md border border-[var(--border)] bg-transparent text-[var(--foreground)] placeholder:text-[var(--muted-foreground)]/60 transition-colors hover:border-[var(--muted-foreground)] focus:border-[var(--accent)] focus:ring-2 focus:ring-[var(--ring)] focus:ring-offset-2 outline-none min-h-[44px]"
                 placeholder="您的姓名"
               />
             </div>
-            
+
             <div>
               <label className="block text-sm font-medium text-[var(--foreground)] mb-2">
                 邮箱
               </label>
-              <input 
-                type="email" 
-                className="w-full px-4 py-3 rounded-md border border-[var(--border)] bg-transparent text-[var(--foreground)] placeholder:text-[var(--muted-foreground)]/60 transition-colors hover:border-[var(--muted-foreground)] focus:border-[var(--accent)] focus:ring-2 focus:ring-[var(--ring)] focus:ring-offset-2 outline-none"
+              <input
+                type="email"
+                className="w-full px-4 py-3 text-base rounded-md border border-[var(--border)] bg-transparent text-[var(--foreground)] placeholder:text-[var(--muted-foreground)]/60 transition-colors hover:border-[var(--muted-foreground)] focus:border-[var(--accent)] focus:ring-2 focus:ring-[var(--ring)] focus:ring-offset-2 outline-none min-h-[44px]"
                 placeholder="your@email.com"
               />
             </div>
-            
+
             <div>
               <label className="block text-sm font-medium text-[var(--foreground)] mb-2">
                 留言
               </label>
-              <textarea 
+              <textarea
                 rows={4}
-                className="w-full px-4 py-3 rounded-md border border-[var(--border)] bg-transparent text-[var(--foreground)] placeholder:text-[var(--muted-foreground)]/60 transition-colors hover:border-[var(--muted-foreground)] focus:border-[var(--accent)] focus:ring-2 focus:ring-[var(--ring)] focus:ring-offset-2 outline-none resize-none"
+                className="w-full px-4 py-3 text-base rounded-md border border-[var(--border)] bg-transparent text-[var(--foreground)] placeholder:text-[var(--muted-foreground)]/60 transition-colors hover:border-[var(--muted-foreground)] focus:border-[var(--accent)] focus:ring-2 focus:ring-[var(--ring)] focus:ring-offset-2 outline-none resize-none"
                 placeholder="请输入您的留言..."
               />
             </div>
-            
+
             <Button type="submit" size="lg" className="w-full">
               发送消息
               <ArrowRight size={16} />

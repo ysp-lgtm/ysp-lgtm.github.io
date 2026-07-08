@@ -54,19 +54,21 @@ export default function Projects() {
         {projects.map((project, index) => (
           <Card key={index} accentTop hoverEffect>
             <div className="flex flex-col md:flex-row md:items-start md:justify-between gap-4 mb-6">
-              <div>
-                <h3 className="font-['Playfair_Display'] text-2xl font-normal text-[var(--foreground)]">
+              <div className="min-w-0">
+                <h3 className="font-['Playfair_Display'] text-2xl font-normal text-[var(--foreground)] break-words">
                   {project.name}
                 </h3>
-                <p className="text-[var(--accent)] font-medium mt-1">{project.role}</p>
+                <p className="text-[var(--accent)] font-medium mt-1">
+                  {project.role} · {project.period}
+                </p>
               </div>
             </div>
-            
+
             <p className="text-[var(--muted-foreground)] mb-6 leading-relaxed">
               {project.description}
             </p>
-            
-            <div className="grid md:grid-cols-2 gap-4 mb-6">
+
+            <div className="grid sm:grid-cols-2 md:grid-cols-2 gap-4 mb-6">
               {project.highlights.map((item, i) => (
                 <div key={i} className="flex items-start gap-3">
                   <span className="w-1.5 h-1.5 rounded-full bg-[var(--accent)] mt-2 flex-shrink-0" />
@@ -74,7 +76,7 @@ export default function Projects() {
                 </div>
               ))}
             </div>
-            
+
             <div className="pt-4 border-t border-[var(--border)]">
               <p className="text-sm">
                 <span className="font-medium text-[var(--foreground)]">项目成果：</span>

@@ -20,7 +20,7 @@ export default function Card({
   return (
     <div
       className={`
-        bg-[var(--card)] rounded-lg border border-[var(--border)] p-8
+        bg-[var(--card)] rounded-lg border border-[var(--border)] p-5 sm:p-8
         ${accentTop ? 'border-t-2 border-t-[var(--accent)]' : ''}
         ${elevated ? 'shadow-md' : 'shadow-sm'}
         ${hoverEffect ? 'transition-all duration-200 hover:shadow-md hover:border-[var(--muted-foreground)] hover:bg-[var(--muted)]/30' : ''}

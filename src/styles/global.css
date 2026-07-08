@@ -166,3 +166,10 @@ html {
     font-size: 15px;
   }
 }
+
+/* Extra small screens (phones in portrait) */
+@media (max-width: 480px) {
+  :root {
+    font-size: 14px;
+  }
+}

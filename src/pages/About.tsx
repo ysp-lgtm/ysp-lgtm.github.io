@@ -10,71 +10,71 @@ export default function About() {
       description="认识这位热衷于用产品思维解决复杂问题的产品经理"
       label="简介"
     >
-      <div className="grid md:grid-cols-[1.3fr_0.7fr] gap-12 md:gap-16">
+      <div className="grid md:grid-cols-[1.3fr_0.7fr] gap-10 md:gap-16">
         {/* Bio Section */}
-        <div className="space-y-8">
-          <div className="prose prose-lg text-[var(--foreground)] leading-[1.85]">
-            <p className="mb-6">
+        <div className="space-y-6 sm:space-y-8 order-2 md:order-1">
+          <div className="prose prose-sm sm:prose-base md:prose-lg text-[var(--foreground)] leading-[1.85]">
+            <p className="mb-4 sm:mb-6">
               你好，我是杨少平，目前在多益网络担任产品经理，3年ToB产品经验，主要聚焦AI应用落地。
             </p>
-            <p className="mb-6">
+            <p className="mb-4 sm:mb-6">
               我主导过两个从0到1的AI产品：公司级AI翻译平台（翻译准确率从65%提升到90%+，服务2000+内部用户）和AI多场景风险检测系统（人工审核效率提升3倍，成本节省67%）。我习惯用"数据采集-训练-验证-迭代"的数据闭环驱动产品迭代，而不是凭感觉拍板。
             </p>
             <p>
               工作里我习惯扎进一线，和业务团队高频对齐真实痛点，确保产品设计和需求严丝合缝。我也长期实践Prompt工程与AI工具（Cursor、Workbuddy等），用AI把PRD、原型、数据获取的流程效率提升60%~80%，持续探索AI如何更好地融入产品设计。
             </p>
           </div>
-          
+
           {/* Key Points */}
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 pt-6 border-t border-[var(--border)]">
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-5 sm:gap-6 pt-6 border-t border-[var(--border)]">
             <div className="flex items-start gap-3">
               <div className="w-8 h-8 rounded-md bg-[var(--accent)]/10 flex items-center justify-center flex-shrink-0">
                 <Briefcase size={14} className="text-[var(--accent)]" />
               </div>
-              <div>
+              <div className="min-w-0">
                 <p className="text-sm font-medium text-[var(--foreground)]">当前职位</p>
-                <p className="text-sm text-[var(--muted-foreground)]">多益网络 · AI产品经理</p>
+                <p className="text-sm text-[var(--muted-foreground)] break-words">多益网络 · AI产品经理</p>
               </div>
             </div>
             <div className="flex items-start gap-3">
               <div className="w-8 h-8 rounded-md bg-[var(--accent)]/10 flex items-center justify-center flex-shrink-0">
                 <GraduationCap size={14} className="text-[var(--accent)]" />
               </div>
-              <div>
+              <div className="min-w-0">
                 <p className="text-sm font-medium text-[var(--foreground)]">教育背景</p>
-                <p className="text-sm text-[var(--muted-foreground)]">山东理工大学 · 数学</p>
+                <p className="text-sm text-[var(--muted-foreground)] break-words">山东理工大学 · 数学</p>
               </div>
             </div>
             <div className="flex items-start gap-3">
               <div className="w-8 h-8 rounded-md bg-[var(--accent)]/10 flex items-center justify-center flex-shrink-0">
                 <MapPin size={14} className="text-[var(--accent)]" />
               </div>
-              <div>
+              <div className="min-w-0">
                 <p className="text-sm font-medium text-[var(--foreground)]">所在地</p>
-                <p className="text-sm text-[var(--muted-foreground)]">广东广州</p>
+                <p className="text-sm text-[var(--muted-foreground)] break-words">广东广州</p>
               </div>
             </div>
             <div className="flex items-start gap-3">
               <div className="w-8 h-8 rounded-md bg-[var(--accent)]/10 flex items-center justify-center flex-shrink-0">
                 <Award size={14} className="text-[var(--accent)]" />
               </div>
-              <div>
+              <div className="min-w-0">
                 <p className="text-sm font-medium text-[var(--foreground)]">求职意向</p>
-                <p className="text-sm text-[var(--muted-foreground)]">AI产品经理 · 全职</p>
+                <p className="text-sm text-[var(--muted-foreground)] break-words">AI产品经理 · 全职</p>
               </div>
             </div>
           </div>
         </div>
-        
+
         {/* Avatar & Contact */}
-        <div className="flex flex-col items-center md:items-start">
+        <div className="flex flex-col items-center md:items-start order-1 md:order-2">
           {/* Avatar placeholder */}
-          <div className="w-48 h-48 rounded-lg bg-[var(--muted)] border border-[var(--border)] flex items-center justify-center mb-8">
-            <span className="font-['Playfair_Display'] text-6xl text-[var(--muted-foreground)]">杨</span>
+          <div className="w-32 h-32 sm:w-48 sm:h-48 rounded-lg bg-[var(--muted)] border border-[var(--border)] flex items-center justify-center mb-6 sm:mb-8">
+            <span className="font-['Playfair_Display'] text-5xl sm:text-6xl text-[var(--muted-foreground)]">杨</span>
           </div>
-          
+
           {/* Name & Title */}
-          <div className="text-center md:text-left mb-8">
+          <div className="text-center md:text-left mb-6 sm:mb-8">
             <h3 className="font-['Playfair_Display'] text-2xl font-normal text-[var(--foreground)] mb-2">
               杨少平
             </h3>
@@ -82,10 +82,10 @@ export default function About() {
               产品经理 · 多益网络
             </p>
           </div>
-          
+
           {/* Contact info */}
-          <div className="space-y-3 text-center md:text-left">
-            <p className="text-sm text-[var(--muted-foreground)]">
+          <div className="space-y-3 text-center md:text-left w-full">
+            <p className="text-sm text-[var(--muted-foreground)] break-all">
               <span className="font-medium text-[var(--foreground)]">邮箱：</span>
               1615602151@qq.com
             </p>
@@ -98,11 +98,11 @@ export default function About() {
       </div>
       
       {/* Skills Section */}
-      <div className="mt-16 pt-12 border-t border-[var(--border)]">
-        <h3 className="font-['Playfair_Display'] text-2xl font-normal text-[var(--foreground)] mb-8">
+      <div className="mt-12 sm:mt-16 pt-10 sm:pt-12 border-t border-[var(--border)]">
+        <h3 className="font-['Playfair_Display'] text-xl sm:text-2xl font-normal text-[var(--foreground)] mb-6 sm:mb-8">
           技能特长
         </h3>
-        <div className="grid md:grid-cols-3 gap-8 mb-12">
+        <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-6 sm:gap-8 mb-10 sm:mb-12">
           <Card accentTop hoverEffect>
             <div className="flex items-center gap-3 mb-6 pb-4 border-b border-[var(--border)]">
               <div className="w-8 h-8 rounded-md bg-[var(--accent)]/10 flex items-center justify-center">
@@ -206,21 +206,21 @@ export default function About() {
       </div>
       
       {/* Education */}
-      <div className="mt-16 pt-12 border-t border-[var(--border)]">
-        <h3 className="font-['Playfair_Display'] text-2xl font-normal text-[var(--foreground)] mb-8">
+      <div className="mt-12 sm:mt-16 pt-10 sm:pt-12 border-t border-[var(--border)]">
+        <h3 className="font-['Playfair_Display'] text-xl sm:text-2xl font-normal text-[var(--foreground)] mb-6 sm:mb-8">
           教育背景
         </h3>
         <Card accentTop>
-          <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-4">
+          <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-3 sm:gap-4">
             <div>
-              <h4 className="font-['Playfair_Display'] text-xl font-normal text-[var(--foreground)]">
+              <h4 className="font-['Playfair_Display'] text-lg sm:text-xl font-normal text-[var(--foreground)]">
                 山东理工大学
               </h4>
               <p className="text-[var(--muted-foreground)] mt-1">
                 数学与应用数学（本科）
               </p>
             </div>
-            <span className="text-sm font-mono uppercase tracking-[0.1em] text-[var(--muted-foreground)] bg-[var(--muted)] px-3 py-1 rounded">
+            <span className="self-start md:self-auto text-sm font-mono uppercase tracking-[0.1em] text-[var(--muted-foreground)] bg-[var(--muted)] px-3 py-1 rounded whitespace-nowrap">
               2019 - 2023
             </span>
           </div>
@@ -233,8 +233,8 @@ export default function About() {
       </div>
       
       {/* Self Evaluation */}
-      <div className="mt-16 pt-12 border-t border-[var(--border)]">
-        <h3 className="font-['Playfair_Display'] text-2xl font-normal text-[var(--foreground)] mb-8">
+      <div className="mt-12 sm:mt-16 pt-10 sm:pt-12 border-t border-[var(--border)]">
+        <h3 className="font-['Playfair_Display'] text-xl sm:text-2xl font-normal text-[var(--foreground)] mb-6 sm:mb-8">
           自我评价
         </h3>
         <Card className="bg-[var(--muted)]/30">

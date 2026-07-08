@@ -25,12 +25,12 @@ export default function Experience() {
     >
       <div className="space-y-12">
         {experiences.map((exp, index) => (
-          <Card key={index} className="relative">
+          <Card key={index} className="relative pl-6 sm:pl-0">
             {/* Timeline indicator */}
-            <div className="absolute left-0 top-0 bottom-0 w-0.5 bg-gradient-to-b from-[var(--accent)] via-[var(--border)] to-[var(--border)]" />
-            <div className="absolute left-[-9px] top-8 w-4 h-4 rounded-full bg-[var(--accent)] border-4 border-[var(--background)]" />
-            
-            <div className="pl-8">
+            <div className="absolute left-2 sm:left-0 top-0 bottom-0 w-0.5 bg-gradient-to-b from-[var(--accent)] via-[var(--border)] to-[var(--border)]" />
+            <div className="absolute left-[3px] sm:left-[-9px] top-8 w-4 h-4 rounded-full bg-[var(--accent)] border-4 border-[var(--background)]" />
+
+            <div className="pl-6 sm:pl-8">
               <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2 mb-6">
                 <div>
                   <h3 className="font-['Playfair_Display'] text-2xl font-normal text-[var(--foreground)]">
@@ -38,11 +38,11 @@ export default function Experience() {
                   </h3>
                   <p className="text-[var(--accent)] font-medium mt-1">{exp.company}</p>
                 </div>
-                <span className="text-sm font-mono uppercase tracking-[0.1em] text-[var(--muted-foreground)] bg-[var(--muted)] px-3 py-1 rounded">
+                <span className="self-start sm:self-auto text-sm font-mono uppercase tracking-[0.1em] text-[var(--muted-foreground)] bg-[var(--muted)] px-3 py-1 rounded whitespace-nowrap">
                   {exp.period}
                 </span>
               </div>
-              
+
               <ul className="space-y-4">
                 {exp.highlights.map((item, i) => (
                   <li key={i} className="flex items-start gap-3 text-[var(--muted-foreground)]">
